@@ -11,8 +11,8 @@ type PortfolioMediaFrameProps = {
 };
 
 const placeholderStyles: Record<PortfolioMediaType, string> = {
-  pdf: "bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)]",
-  image: "bg-gradient-to-br from-[var(--primary)] to-[var(--primary-light)]",
+  pdf: "bg-gradient-to-br from-clay-500 to-taupe-400",
+  image: "bg-gradient-to-br from-clay-500 to-taupe-400",
 };
 
 export default function PortfolioMediaFrame({

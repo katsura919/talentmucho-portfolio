@@ -162,13 +162,13 @@ export default function PortfolioLightbox({
       onClick={handleClose}
     >
       <div
-        className="relative w-full max-w-5xl overflow-hidden rounded-3xl bg-[var(--background)] shadow-2xl"
+        className="relative w-full max-w-5xl overflow-hidden rounded-2xl bg-beige-50 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           type="button"
           onClick={handleClose}
-          className="absolute right-4 top-4 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[var(--primary)] shadow-sm transition hover:bg-white"
+          className="absolute right-4 top-4 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-clay-500 shadow-sm transition hover:bg-white"
           aria-label="Close full view"
         >
           <X className="h-5 w-5" />
@@ -182,7 +182,7 @@ export default function PortfolioLightbox({
 
         <div
           ref={imageContainerRef}
-          className="relative h-[70vh] w-full select-none overflow-hidden bg-[var(--background-alt)]"
+          className="relative h-[70vh] w-full select-none overflow-hidden bg-beige-100"
         >
           <div
             style={{
@@ -218,19 +218,19 @@ export default function PortfolioLightbox({
               type="button"
               onClick={zoomOut}
               disabled={zoom <= MIN_ZOOM}
-              className="flex h-7 w-7 items-center justify-center rounded-full text-[var(--primary)] transition hover:bg-black/10 disabled:opacity-30"
+              className="flex h-7 w-7 items-center justify-center rounded-full text-clay-500 transition hover:bg-black/10 disabled:opacity-30"
               aria-label="Zoom out"
             >
               <Minus className="h-3.5 w-3.5" />
             </button>
-            <span className="min-w-[2.75rem] text-center text-[11px] font-semibold text-[var(--primary)]">
+            <span className="min-w-[2.75rem] text-center text-[11px] font-semibold text-clay-500">
               {Math.round(zoom * 100)}%
             </span>
             <button
               type="button"
               onClick={zoomIn}
               disabled={zoom >= MAX_ZOOM}
-              className="flex h-7 w-7 items-center justify-center rounded-full text-[var(--primary)] transition hover:bg-black/10 disabled:opacity-30"
+              className="flex h-7 w-7 items-center justify-center rounded-full text-clay-500 transition hover:bg-black/10 disabled:opacity-30"
               aria-label="Zoom in"
             >
               <Plus className="h-3.5 w-3.5" />
@@ -243,7 +243,7 @@ export default function PortfolioLightbox({
             <button
               type="button"
               onClick={prev}
-              className="absolute left-4 top-1/2 z-10 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[var(--primary)] shadow-sm transition hover:bg-white"
+              className="absolute left-4 top-1/2 z-10 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-clay-500 shadow-sm transition hover:bg-white"
               aria-label="Previous image"
             >
               <ChevronLeft className="h-5 w-5" />
@@ -251,7 +251,7 @@ export default function PortfolioLightbox({
             <button
               type="button"
               onClick={next}
-              className="absolute right-4 top-1/2 z-10 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[var(--primary)] shadow-sm transition hover:bg-white"
+              className="absolute right-4 top-1/2 z-10 -translate-y-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-clay-500 shadow-sm transition hover:bg-white"
               aria-label="Next image"
             >
               <ChevronRight className="h-5 w-5" />
@@ -265,8 +265,8 @@ export default function PortfolioLightbox({
                   onClick={() => setCurrentIndex(i)}
                   className={`h-2 rounded-full transition-all ${
                     i === currentIndex
-                      ? "w-6 bg-[var(--primary)]"
-                      : "w-2 bg-[var(--border-light)] hover:bg-[var(--muted-foreground)]"
+                      ? "w-6 bg-clay-500"
+                      : "w-2 bg-beige-200 hover:bg-taupe-400"
                   }`}
                   aria-label={`Go to image ${i + 1}`}
                 />
@@ -287,7 +287,7 @@ export default function PortfolioLightbox({
         aria-label={`Open full view of ${alt}`}
       >
         {children}
-        <span className="pointer-events-none absolute bottom-4 right-4 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-[var(--primary)] opacity-0 shadow-sm transition group-hover:opacity-100">
+        <span className="pointer-events-none absolute bottom-4 right-4 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-clay-500 opacity-0 shadow-sm transition group-hover:opacity-100">
           {isCarousel ? `View ${allImages.length} images` : "Click to expand"}
         </span>
       </button>

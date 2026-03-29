@@ -25,7 +25,7 @@ export default function PortfolioGrid() {
       {images.map((src, idx) => (
         <div
           key={idx}
-          className="relative overflow-hidden rounded-xl border border-[var(--border-light)] hover:shadow-lg transition-shadow group cursor-pointer"
+          className="relative overflow-hidden rounded-xl border border-beige-200 hover:shadow-lg transition-shadow group cursor-pointer"
         >
           <Image
             src={src}

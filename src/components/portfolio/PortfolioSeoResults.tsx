@@ -117,46 +117,46 @@ const seoImageResults: SeoImageResult[] = [
 
 export default function PortfolioSeoResults() {
   return (
-    <section id="seo-results" className="section bg-[var(--background-alt)]">
+    <section id="seo-results" className="section bg-beige-100">
       <div className="container">
         <div className="mb-12 text-center">
-          <span className="mb-3 block font-semibold uppercase tracking-wider text-[var(--primary)]">
+          <span className="mb-3 block font-semibold uppercase tracking-wider text-clay-500">
             SEO Results
           </span>
-          <h2 className="mb-4 text-3xl font-light text-[var(--primary)] md:text-5xl">
+          <h2 className="mb-4 text-3xl font-light text-charcoal-900 md:text-5xl">
             Real SEO evidence library
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--foreground-light)]">
+          <p className="mx-auto max-w-3xl text-lg text-taupe-400">
             No forced buckets. Just direct campaign evidence you can scan and
             open in full view.
           </p>
         </div>
 
-        <article className="mb-6 overflow-hidden rounded-3xl border border-[var(--border-light)] bg-white p-4 shadow-sm">
+        <article className="mb-6 overflow-hidden rounded-2xl border border-beige-200 bg-white p-4 shadow-sm">
           <div className="grid gap-4 md:grid-cols-[1.4fr_1fr] md:items-center">
             <video
               controls
               preload="metadata"
-              className="h-80 w-full rounded-2xl border border-[var(--border-light)] bg-black object-cover md:h-[26rem]"
+              className="h-80 w-full rounded-2xl border border-beige-200 bg-black object-cover md:h-[26rem]"
             >
               <source src={seoAnalyticsVideo} type="video/mp4" />
             </video>
 
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-taupe-400">
                 SEO Analytics
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-[var(--primary)]">
+              <h3 className="mt-2 text-2xl font-semibold text-charcoal-900">
                 Full Analytics Walkthrough
               </h3>
-              <p className="mt-3 text-sm text-[var(--foreground-light)]">
+              <p className="mt-3 text-sm text-taupe-400">
                 A video capture of search performance and trend movement.
               </p>
               <a
                 href={seoAnalyticsVideo}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-flex w-fit items-center rounded-full border border-[var(--border-light)] bg-[var(--background-alt)] px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[var(--primary)] transition hover:-translate-y-0.5 hover:bg-white"
+                className="mt-4 inline-flex w-fit items-center rounded-full border border-beige-200 bg-beige-100 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-clay-500 transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Open Video in New Tab
               </a>
@@ -168,7 +168,7 @@ export default function PortfolioSeoResults() {
           {seoImageResults.map((item) => (
             <article
               key={item.id}
-              className="flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--border-light)] bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="flex h-full flex-col overflow-hidden rounded-2xl border border-beige-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <PortfolioLightbox
                 src={item.image}
@@ -185,13 +185,13 @@ export default function PortfolioSeoResults() {
               </PortfolioLightbox>
 
               <div className="mt-5 flex flex-1 flex-col">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+                <p className="text-xs font-semibold uppercase tracking-widest text-taupe-400">
                   SEO Proof
                 </p>
-                <h3 className="mt-2 text-xl font-semibold text-[var(--primary)]">
+                <h3 className="mt-2 text-xl font-semibold text-charcoal-900">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm text-[var(--foreground-light)]">
+                <p className="mt-3 text-sm text-taupe-400">
                   Click the card to inspect this screenshot in full-screen view.
                 </p>
               </div>

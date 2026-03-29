@@ -13,7 +13,7 @@ export default function BookingEmbed() {
 
   return (
     <>
-      <section id="booking" className="section bg-[var(--primary)]">
+      <section id="booking" className="section bg-charcoal-900">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -29,7 +29,7 @@ export default function BookingEmbed() {
 
               <h2 className="section-title mb-6 text-3xl font-light text-white md:text-5xl">
                 Let&apos;s Discuss How We Can{" "}
-                <span className="text-[var(--accent-light)]">
+                <span className="text-beige-200">
                   Transform Your Business
                 </span>
               </h2>

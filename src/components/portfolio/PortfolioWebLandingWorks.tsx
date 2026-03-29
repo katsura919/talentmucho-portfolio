@@ -5,13 +5,13 @@ export default function PortfolioWebLandingWorks() {
     <section id="web-landing-works" className="section bg-beige-50">
       <div className="container">
         <div className="mb-12 text-center">
-          <span className="mb-3 block font-semibold uppercase tracking-wider text-[var(--primary)]">
+          <span className="mb-3 block font-semibold uppercase tracking-wider text-clay-500">
             Web Landing Pages
           </span>
-          <h2 className="mb-4 text-3xl font-light text-[var(--primary)] md:text-5xl">
+          <h2 className="mb-4 text-3xl font-light text-charcoal-900 md:text-5xl">
             High-converting landing page mockups
           </h2>
-          <p className="mx-auto max-w-3xl text-lg text-[var(--foreground-light)]">
+          <p className="mx-auto max-w-3xl text-lg text-taupe-400">
             Browse full-page mockups and open live previews to see structure,
             messaging, and conversion flow in action.
           </p>

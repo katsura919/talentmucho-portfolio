@@ -29,10 +29,10 @@ const reasons = [
 
 export default function PortfolioWhyChooseUs() {
   return (
-    <section id="why-choose-us" className="section bg-[var(--primary)]">
+    <section id="why-choose-us" className="section bg-charcoal-900">
       <div className="container">
         <div className="mb-12 text-center">
-          <span className="mb-3 block font-semibold uppercase tracking-wider text-[var(--accent-light)]">
+          <span className="mb-3 block font-semibold uppercase tracking-wider text-taupe-400">
             Why Choose Us
           </span>
           <h2 className="mb-4 text-3xl font-light text-white md:text-5xl">
@@ -48,15 +48,15 @@ export default function PortfolioWhyChooseUs() {
           {reasons.map(({ title, description, Icon }) => (
             <article
               key={title}
-              className="rounded-2xl border border-[var(--border-light)] bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="rounded-2xl border border-beige-200/20 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--primary)]/10 text-[var(--primary)]">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-clay-500/10 text-clay-500">
                 <Icon className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold text-[var(--primary)]">
+              <h3 className="text-xl font-semibold text-charcoal-900">
                 {title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--foreground-light)]">
+              <p className="mt-3 text-sm leading-relaxed text-taupe-400">
                 {description}
               </p>
             </article>

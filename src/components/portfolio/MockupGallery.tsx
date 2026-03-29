@@ -127,7 +127,7 @@ export default function MockupGallery() {
                                 href={mockup.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-3 bg-beige-100 hover:bg-[var(--primary)] hover:text-white rounded-none transition-colors duration-300"
+                                className="p-3 bg-beige-100 hover:bg-clay-500 hover:text-white rounded-none transition-colors duration-300"
                                 onClick={(e) => e.stopPropagation()}
                                 aria-label={`Visit ${mockup.title} website`}
                             >
@@ -149,7 +149,7 @@ export default function MockupGallery() {
                                 href={activeMockup.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-white font-bold uppercase tracking-wider text-sm hover:bg-[var(--espresso-700)] transition-colors"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-clay-500 text-white font-bold uppercase tracking-wider text-sm hover:bg-espresso-700 transition-colors"
                             >
                                 Visit Live Website <ExternalLink className="w-4 h-4" />
                             </a>
@@ -181,7 +181,7 @@ export default function MockupGallery() {
                                 href={activeMockup.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-charcoal-900 font-bold uppercase tracking-widest text-sm hover:bg-[var(--primary)] hover:text-white transition-colors"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-charcoal-900 font-bold uppercase tracking-widest text-sm hover:bg-clay-500 hover:text-white transition-colors"
                             >
                                 Visit This Website <ArrowRightIcon className="w-4 h-4" />
                             </a>
